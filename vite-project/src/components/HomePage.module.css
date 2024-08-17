@@ -1,0 +1,113 @@
+/* Set up the container for the landing page */
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1e;
+}
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/Homepage/story.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay for text readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Title and subtitle styling */
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  font-family: 'Lora', serif;
+}
+
+/* Start button styling */
+.start-button {
+  padding: 12px 24px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Lora', serif;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #e68900;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .start-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .start-button {
+    padding: 8px 18px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .start-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+ 
